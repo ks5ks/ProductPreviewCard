@@ -80,6 +80,11 @@ body {
   cursor: pointer;
 }
 
+.cart {
+  margin-right: 0.5rem;
+  transform: translate(-50%, 20%);
+}
+
 .attribution {
   margin-top: 3rem;
   font-size: 0.5rem;
