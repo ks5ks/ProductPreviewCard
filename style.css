@@ -30,7 +30,7 @@ body {
 
 .information {
   margin-top: -3px;
-  padding: 2rem;
+  padding: 1rem;
   background-color: #ffffff;
   border-radius: 0 0 0.5rem 0.5rem;
   min-height: 100%;
@@ -49,6 +49,7 @@ body {
 
   .information {
     margin-top: 0px;
+    padding: 2rem;
     border-radius: 0 0.5rem 0.5rem 0;
   }
 }
