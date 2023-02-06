@@ -7,32 +7,55 @@
 body {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: hsl(30, 38%, 92%);
 }
 
 .container {
   font-family: Montserrat, sans-serif;
   max-width: 375px;
+
   margin: 1rem;
   padding: 1rem;
-  background-color: hsl(30, 38%, 92%);
 }
 
 .image {
   border-radius: 0.5rem 0.5rem 0 0;
   font-size: 0px;
+  min-height: 100%;
+  flex-basis: 100%;
 }
 
 .information {
   margin-top: -3px;
-  padding: 1rem;
+  padding: 2rem;
   background-color: #ffffff;
   border-radius: 0 0 0.5rem 0.5rem;
+  min-height: 100%;
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .container {
+    max-width: 750px;
+    display: flex;
+  }
+
+  .image {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .information {
+    margin-top: 0px;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
 }
 
 .productClass {
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
   margin-bottom: 1rem;
 }
 
@@ -45,6 +68,8 @@ body {
 
 .productDescription {
   margin-bottom: 1.5rem;
+  /* */
+  line-height: 1.5;
 }
 
 .pricing {
